@@ -124,6 +124,11 @@ button {
   transform: scale(0.1);
 }
 
+.panel-microphone {
+  visibility: visible;
+  transform: scale(1);
+}
+
 /* * Classe listening gestita da JS * */
 .listening .panel-commands {
   visibility: visible;
