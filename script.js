@@ -36,10 +36,26 @@ function onResult(e) {
   const action = commands.find(function (command) {
     return testo.toLowerCase().includes(command);
   });
-  console.log(action);
+  // console.log(action);
+
+  // * Gestisco la possibilità che l'utente non dica una parola dell'elenco
+  if (action === undefined) {
+    window.alert('Errore. Devi dire una parola presente nell\'elenco');
+  }
+
+  // * Aggiungo l'animazione captata al codigotchi
+  const actionClass = 'codigotchi-screen_' + action;
+  // console.log(actionClass);
+
+  screen.classList.add(actionClass);
 
   // * Rimuovo la classe listening
   panelsData.classList.remove('listening');
+
+  // * Setto un timeout per l'animazione
+  setTimeout(function () {
+    screen.classList.remove(actionClass);
+  }, 2500);
 }
 
 // * Aggiungo gli event handler
