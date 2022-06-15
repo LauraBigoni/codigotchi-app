@@ -13,14 +13,56 @@ img {
 html {
   font-family: 'Lato', sans-serif;
   height: 100%;
-  background: linear-gradient(#3535ec, #b62897);
+  background: linear-gradient(#838ef9, #3535ec);
   background-attachment: fixed;
-  color: white;
+  color: #000;
+}
+
+main {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #4C6C96;
+}
+
+/* * Logo * */
+header img {
+  width: 56px;
 }
 
 /* * Container * */
 .container {
   width: 90%;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 1.2rem;
+  padding: 16px;
+}
+
+/* * Codigotchi * */
+.codigotchi {
+  width: 230px;
+  margin: 0 auto 24px auto;
+  position: relative;
+}
+
+/* * Ul & Li * */
+.commands ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.commands ul li {
+  font-size: 24px;
+  font-weight: bold;
 }

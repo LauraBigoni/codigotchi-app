@@ -19,6 +19,51 @@
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <!-- * Logo * -->
+      <img src="images/logo.png" alt="Coding Week Logo">
+    </header>
+
+    <!-- * Contenuto principale * -->
+    <main>
+
+      <!-- * Codigotchi * -->
+      <div class="codigotchi">
+        <img src="images/codigotchi.png" alt="codigotchi">
+
+        <!-- * Schermo codigotchi * -->
+        <div id="screen" class="codigotchi-screen"></div>
+      </div>
+
+      <!-- * Pannello * -->
+      <div class="panels" id="panels-data">
+
+        <!-- * Microfono * -->
+        <div class="panel panel-mic">
+          <button>
+            <img src="images/mic.png" alt="Microfono">
+          </button>
+          <h2>Attiva il microfono</h2>
+        </div>
+
+        <!-- * Comandi * -->
+        <div class="panel panel-commands">
+          <h2>Interagisci coi comandi vocali!</h2>
+          <h3>Comandi supportati</h3>
+
+          <!-- * Lista comandi * -->
+          <div class="commands">
+            <ul>
+              <li>Mangia</li>
+              <li>Balla</li>
+              <li>Dormi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
   <!-- * Script JS * -->
   <script src="script.js"></script>
 </body>
