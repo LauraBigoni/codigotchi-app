@@ -12,3 +12,13 @@ const panelsData = document.getElementById('panels-data');
 const commands = ["mangia", "balla", "dormi"];
 
 // * Inizializzazione comando vocale
+const recognition = new SpeechRecognition();
+
+// * Inizio ad ascoltare
+function onStartListening() {
+  recognition.start();
+  panelsData.classList.add('listening');
+}
+
+// * Aggiungo gli event handler
+micButton.addEventListener('click', onStartListening);
