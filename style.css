@@ -1,0 +1,26 @@
+/* * CSS reset * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* * Generiche * */
+html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  background: linear-gradient(#3535ec, #b62897);
+  background-attachment: fixed;
+  color: white;
+}
+
+/* * Container * */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
